@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Indhuja V — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <h1>Indhuja <span class="accent">V</span></h1>
+        <p class="tag">Frontend Developer • B.E. Computer Science</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Hi — I'm Indhuja</h2>
+          <p>
+            A motivated and adaptable frontend developer from Coimbatore. I build responsive, accessible UI and enjoy turning ideas into polished interfaces.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="KAAR_RESUME.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+          <ul class="contact-inline">
+            <li><strong>Phone:</strong> 8056407434</li>
+            <li><strong>Email:</strong> <a href="mailto:indhujavelusamy18@gmail.com">indhujavelusamy18@gmail.com</a></li>
+            <li><strong>Location:</strong> Coimbatore</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <img src="image.jpeg" alt="Profile picture (replace with your photo)" class="avatar">
+          <div class="card-meta">
+            <p><strong>Currently:</strong> B.E. Computer Science — Dr. N.G.P. Institute of Technology</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/IndhujaVelusamy" target="_blank" rel="noopener">IndhujaVelusamy</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/indhuja-velusamy-92aa43282" target="_blank" rel="noopener">indhuja-velusamy</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h3>Featured Projects</h3>
+        <div class="cards-grid">
+          <article class="card">
+            <h4>Transparency Care (2025)</h4>
+            <p>Project to support orphanages, elderly and differently-abled communities through food donation, healthcare and education with a transparent resource distribution framework.</p>
+            <p class="muted">Role: UI / Frontend design & implementation.</p>
+            <div class="card-actions">
+              <a href="#" class="link">Live demo</a>
+              <a href="#" class="link">Source</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h4>Cardiovascular Disease Detection (2024)</h4>
+            <p>Frontend for patient data input and risk prediction UI integrated with ML model outputs to help early diagnosis workflows.</p>
+            <p class="muted">Role: Frontend Developer.</p>
+            <div class="card-actions">
+              <a href="#" class="link">Live demo</a>
+              <a href="#" class="link">Source</a>
+            </div>
+          </article>
+
+          <!-- add more project cards here -->
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container">
+        <h3>Experience & Education</h3>
+        <div class="split">
+          <div>
+            <h4>Frontend Developer Intern — Accent Techno Soft</h4>
+            <p class="muted">Jul 2024 – Aug 2024</p>
+            <ul>
+              <li>Designed responsive UI using HTML & CSS and improved cross-device compatibility.</li>
+              <li>Worked with team members for integration & testing.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Education</h4>
+            <p class="muted">B.E. Computer Science — Dr. N.G.P. Institute of Technology</p>
+            <p>SSLC 97.8% • HSC 88%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h3>Skills</h3>
+        <div class="skill-grid">
+          <div class="skill">
+            <h5>Languages</h5>
+            <p>Java, SQL</p>
+          </div>
+          <div class="skill">
+            <h5>Web</h5>
+            <p>HTML, CSS</p>
+          </div>
+          <div class="skill">
+            <h5>Database</h5>
+            <p>SQL Server</p>
+          </div>
+          <div class="skill">
+            <h5>Tools</h5>
+            <p>Git, VS Code</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>If you'd like to collaborate or hire me, send a message:</p>
+
+        <form id="contactForm" class="contact-form">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <a class="btn ghost" href="mailto:indhujavelusamy18@gmail.com">Or email me</a>
+          </div>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <small>© <span id="year"></span> Indhuja V — Built with ❤️</small>
+      <div class="footer-links">
+        <a href="https://github.com/IndhujaVelusamy" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/indhuja-velusamy-92aa43282" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
